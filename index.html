@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Farm by George Orwell</title>
+    <style>
+        :root {
+            --primary-color: #4a4e69;
+            --secondary-color: #9a8c98;
+            --accent-color: #c9ada7;
+            --background-color: #f2e9e4;
+            --text-color: #22223b;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeInDown 1s ease-out;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: var(--background-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+        .character {
+            background-color: var(--background-color);
+            border: 1px solid var(--secondary-color);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .character:hover {
+            background-color: var(--accent-color);
+        }
+        .hidden {
+            display: none;
+        }
+        #theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #theme-toggle:hover {
+            background-color: var(--secondary-color);
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animal Farm by George Orwell</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#author">About the Author</a></li>
+            <li><a href="#meaning">Deeper Meaning</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <section id="summary" class="fade-in">
+                <h2>Book Summary</h2>
+                <p>Animal Farm is a satirical novella by George Orwell, first published in 1945. The story takes place on a farm where the animals rebel against their human farmer, hoping to create a society where they can be equal, free, and happy. They adopt Seven Commandments of Animalism, the most important of which is, "All animals are equal."</p>
+                <p>As time passes, the pigs gradually become corrupted by power and start to adopt human-like behaviors. They begin to manipulate and exploit the other animals, eventually declaring, "All animals are equal, but some animals are more equal than others." The farm ultimately ends up in a state as bad as it was before, with the pigs becoming indistinguishable from the humans they once sought to overthrow.</p>
+            </section>
+            <section id="characters" class="fade-in">
+                <h2>Character Analysis</h2>
+                <div class="character">
+                    <h3>Napoleon</h3>
+                    <p>Napoleon is a large, fierce-looking Berkshire boar who becomes the leader of Animal Farm after the Rebellion. He is based on Joseph Stalin and represents the corrupt leadership that can arise in a revolution.</p>
+                </div>
+                <div class="character">
+                    <h3>Snowball</h3>
+                    <p>Snowball is Napoleon's rival and the original leader of the farm after the Rebellion. He is based on Leon Trotsky and represents the idealistic revolutionary who is eventually outmaneuvered by more cunning and ruthless elements.</p>
+                </div>
+                <div class="character">
+                    <h3>Boxer</h3>
+                    <p>Boxer is a loyal and hardworking cart-horse. He represents the working class, who are exploited by the ruling class despite their dedication and effort.</p>
+                </div>
+            </section>
+            <section id="author" class="fade-in">
+                <h2>About the Author</h2>
+                <p>George Orwell, born Eric Arthur Blair (1903-1950), was an English novelist, essayist, journalist, and critic. He is best known for his novels Animal Farm and Nineteen Eighty-Four, both of which are powerful critiques of totalitarianism and social injustice.</p>
+                <p>Orwell's work is characterized by lucid prose, awareness of social injustice, opposition to totalitarianism, and outspoken support of democratic socialism. His experiences in the Spanish Civil War and his observations of political developments in the Soviet Union greatly influenced his political views and his writing.</p>
+            </section>
+            <section id="meaning" class="fade-in">
+                <h2>Deeper Meaning</h2>
+                <p>Animal Farm is an allegory for the Russian Revolution and the early years of the Soviet Union. Through the story of the animals, Orwell critiques the corruption of revolutionary ideals and the dangers of totalitarian power.</p>
+                <p>The novel explores themes such as:</p>
+                <ul>
+                    <li>The corrupting nature of power</li>
+                    <li>The manipulation of language for political ends</li>
+                    <li>The importance of education and critical thinking</li>
+                    <li>The dangers of blind loyalty and the cult of personality</li>
+                </ul>
+                <p>By using animals as characters, Orwell creates a simple and accessible narrative that allows readers to understand complex political ideas and historical events.</p>
+            </section>
+            <section id="quiz" class="fade-in">
+                <h2>Animal Farm Quiz</h2>
+                <div id="quiz-container">
+                    <p id="question"></p>
+                    <div id="choices"></div>
+                    <button id="submit-answer">Submit Answer</button>
+                    <p id="result"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Animal Farm Website. All rights reserved.</p>
+    </footer>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+            const themeToggle = document.getElementById('theme-toggle');
+            let isDarkMode = false;
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.remove('hidden');
+                            section.classList.add('fade-in');
+                        } else {
+                            section.classList.add('hidden');
+                            section.classList.remove('fade-in');
+                        }
+                    });
+                });
+            });
+
+            // Show the summary section by default
+            sections.forEach(section => {
+                if (section.id !== 'summary') {
+                    section.classList.add('hidden');
+                }
+            });
+
+            themeToggle.addEventListener('click', function() {
+                isDarkMode = !isDarkMode;
+                if (isDarkMode) {
+                    document.body.style.setProperty('--background-color', '#22223b');
+                    document.body.style.setProperty('--text-color', '#f2e9e4');
+                } else {
+                    document.body.style.setProperty('--background-color', '#f2e9e4');
+                    document.body.style.setProperty('--text-color', '#22223b');
+                }
+            });
+
+            // Quiz functionality
+            const quizContainer = document.getElementById('quiz-container');
+            const questionEl = document.getElementById('question');
+            const choicesEl = document.getElementById('choices');
+            const submitButton = document.getElementById('submit-answer');
+            const resultEl = document.getElementById('result');
+
+            const questions = [
+                {
+                    question: "Who is the author of Animal Farm?",
+                    choices: ["George Orwell", "Aldous Huxley", "Ernest Hemingway", "F. Scott Fitzgerald"],
+                    correctAnswer: 0
+                },
+                {
+                    question: "Which animal represents the working class in Animal Farm?",
+                    choices: ["Napoleon", "Snowball", "Boxer", "Squealer"],
+                    correctAnswer: 2
+                },
+                {
+                    question: "What is the original name of the farm before the animals' rebellion?",
+                    choices: ["Animal Farm", "Manor Farm", "Freedom Farm", "Rebellion Farm"],
+                    correctAnswer: 1
+                }
+            ];
+
+            let currentQuestion = 0;
+
+            function loadQuestion() {
+                const question = questions[currentQuestion];
+                questionEl.textContent = question.question;
+                choicesEl.innerHTML = '';
+                question.choices.forEach((choice, index) => {
+                    const button = document.createElement('button');
+                    button.textContent = choice;
+                    button.addEventListener('click', () => selectAnswer(index));
+                    choicesEl.appendChild(button);
+                });
+                submitButton.style.display = 'none';
+                resultEl.textContent = '';
+            }
+
+            function selectAnswer(index) {
+                choicesEl.querySelectorAll('button').forEach(button => button.classList.remove('selected'));
+                choicesEl.children[index].classList.add('selected');
+                submitButton.style.display = 'block';
+            }
+
+            submitButton.addEventListener('click', function() {
+                const selected = choicesEl.querySelector('.selected');
+                if (selected) {
+                    const selectedAnswer = Array.from(choicesEl.children).indexOf(selected);
+                    if (selectedAnswer === questions[currentQuestion].correctAnswer) {
+                        resultEl.textContent = "Correct!";
+                        resultEl.style.color = "green";
+                    } else {
+                        resultEl.textContent = "Incorrect. Try again!";
+                        resultEl.style.color = "red";
+                    }
+                    currentQuestion++;
+                    if (currentQuestion < questions.length) {
+                        setTimeout(loadQuestion, 1500);
+                    } else {
+                        setTimeout(() => {
+                            quizContainer.innerHTML = "<h3>Quiz completed!</h3><p>Thank you for participating.</p>";
+                        }, 1500);
+                    }
+                }
+            });
+
+            loadQuestion();
+        });
+    </script>
+</body>
+</html>
